@@ -1,5 +1,5 @@
 global._STORE_ = 'curiosity';
-global._APN = 'curiosity-server-b99ff.appspot.com';
+global._APN = 'curiosity-server-f02fe.appspot.com';
 global._SEMILLA = '87364583b873264b8723648597634';
 
 global._KEY_MAPA_GOOGLE = 'AIzaSyBVJKjuIwc-YQO2_AfefJlSG-wj4FSKlZY';
