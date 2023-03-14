@@ -75,7 +75,7 @@ function iniciar(req, imei, idaplicativo, idCompra, idCliente, idDespachoEstado,
         let idDespacho = respuesta['insertId'];
         if (idDespacho <= 0)
             return callback({ idDespacho: 0 });
-        chatDespacho.enviarDepacho(req, idDespacho, '👨🏼‍🚀 Nueva solicitud', `${km} km, ${costo_envio} USD`, idaplicativo);
+        chatDespacho.enviarDepacho(req, idDespacho, '👨🏼‍🚀 Nueva solicitud', `${km} km, ${costo_envio} Soles`, idaplicativo);
         return callback({ idDespacho: idDespacho });
     }, res);
 }

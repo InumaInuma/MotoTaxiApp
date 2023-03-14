@@ -205,9 +205,9 @@ function iniciar(req, res, idaplicativo, idplataforma, imei) {
                                 var SQL_ = '';
                                 for (var i = 0; i < pr.length; i++) {
                                     if (pr[i]['dt'] == '' || !pr[i]['dt'])
-                                        detalle += `${pr[i]['cantidad']} ${pr[i]['producto']} ${pr[i]['costoTotal']} USD \n`;
+                                        detalle += `${pr[i]['cantidad']} ${pr[i]['producto']} ${pr[i]['costoTotal']} Soles \n`;
                                     else
-                                        detalle += `${pr[i]['cantidad']} ${pr[i]['producto']} ${pr[i]['costoTotal']} USD \n(${pr[i]['dt']}) \n`;
+                                        detalle += `${pr[i]['cantidad']} ${pr[i]['producto']} ${pr[i]['costoTotal']} Soles \n(${pr[i]['dt']}) \n`;
                                     if (i == 0)
                                         SQL_ += ` (${idCompra}, '${pr[i]['id_promocion']}', '${pr[i]['incentivo']}','${pr[i]['producto']}','${pr[i]['descripcion']}','${pr[i]['precio']}','${pr[i]['cantidad']}',${pr[i]['costoTotal']},'${pr[i]['imagen']}')`;
                                     else
